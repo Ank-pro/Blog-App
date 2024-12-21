@@ -8,8 +8,10 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-    origin : 'https://blog-app-ochre.vercel.app/',
-    credentials : true
+    origin: ['http://localhost:5173', 'https://your-frontend-vercel-url.vercel.app'],
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'HEAD', 'OPTIONS'],
+    credentials: true,
+    allowedHeaders: ['Content-Type', 'Origin', 'X-Requested-With', 'Accept', 'x-client-key', 'x-client-token', 'x-client-secret', 'Authorization']
 }));
 app.use(express.json());
 
