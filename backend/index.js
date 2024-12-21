@@ -13,6 +13,8 @@ app.use(cors({
     credentials: true,
     allowedHeaders: ['Content-Type', 'Origin', 'X-Requested-With', 'Accept', 'x-client-key', 'x-client-token', 'x-client-secret', 'Authorization']
 }));
+
+app.use(cors());
 app.use(express.json());
 
 mongoose
