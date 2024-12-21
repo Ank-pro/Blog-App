@@ -5,11 +5,6 @@ export function Home() {
     
   return (
     <div className="home">
-      <nav>
-        <li>Home</li>
-        <li>New Blog</li>
-      </nav>
-
       <article>
         <header>
           <h1>Blog Post Title</h1>

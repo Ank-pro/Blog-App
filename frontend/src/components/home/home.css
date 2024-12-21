@@ -2,15 +2,6 @@
   border: 1px solid black;
 }
 
-nav {
-  display: flex;
-  padding: 20px 10rem;
-  gap: 1rem;
-  list-style: none;
-}
-nav li{
-  cursor: pointer;
-}
 
 article {
   margin: 0px 10rem;

@@ -19,16 +19,16 @@ mongoose
 
 app.use('/api/blogs',blogRoutes);
 
-//test
-app.get('/test', async (req, res) => {
-    try {
-        const text = await run(`Give me summary not more than 75 words on ${title}`);
-        res.status(200).json(text)
-    }
-    catch(err){
-        res.status(500).json({error : 'Internal server err'})
-    }
-})
+//testing
+// app.get('/test', async (req, res) => {
+//     try {
+//         const text = await run(`Give me summary not more than 75 words on ${title}`);
+//         res.status(200).json(text)
+//     }
+//     catch(err){
+//         res.status(500).json({error : 'Internal server err'})
+//     }
+// })
 
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
