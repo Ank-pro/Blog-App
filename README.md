@@ -1,60 +1,47 @@
-Blog Application
-A full-stack MERN blog application with AI-powered summary generation using Google's Gemini API.
-Features
+**Setup & Installation**
+1. Clone Repository
+Fork this repository.
+Clone it to your local machine using the following command:
+git clone https://github.com/your-username/blog-app.git
 
-Create and view blog posts
-Auto-generate blog summaries using Gemini AI
-Responsive design
-MongoDB integration
-Real-time summary generation
+2. Frontend Setup
+Navigate to the frontend directory.
+Install dependencies by running:
 
-Tech Stack
+pnpm install
 
-Frontend: React (Vite)
-Backend: Node.js, Express.js
-Database: MongoDB
-AI Integration: Google Gemini API
-Package Manager: pnpm
-Deployment: Vercel
+Create a .env file in the frontend directory and add your Google Gemini API key:
 
-Setup & Installation
+VITE_GEMINI_API_KEY=your_gemini_api_key
 
-Clone Repository
+Start the frontend server by running:
 
-Fork this repository
-Clone to your local machine
+pnpm run dev
+The frontend will be running on http://localhost:5173.
 
+3. Backend Setup
+Navigate to the backend directory.
 
-Frontend Setup
+Install dependencies by running:
 
-Navigate to frontend directory
-Install dependencies with pnpm install
-Create .env file:
-CopyVITE_GEMINI_API_KEY=your_gemini_api_key
+pnpm install
+Create a .env file in the backend directory and add your MongoDB connection string and port:
 
-Start frontend: pnpm dev
-
-
-Backend Setup
-
-Navigate to backend directory
-Install dependencies with pnpm install
-Create .env file:
-CopyPORT=5000
+PORT=5000
 DB_URI=your_mongodb_connection_string
+Start the backend server by running:
 
-Start backend: pnpm start
+nodemon index
+The backend will be running on http://localhost:5000.
 
+4. Database Setup
+Create a MongoDB Atlas account (if you don't have one).
+Create a new cluster.
+Get the connection string from the MongoDB Atlas dashboard.
+Add the connection string to the DB_URI variable in the backend/.env file.
 
-Database Setup
+6. Gemini API Setup
+Get your API key from Google AI Studio.
+Add the key to the .env file in the frontend directory:
 
-Create MongoDB Atlas account
-Create new cluster
-Get connection string
-Add connection string to backend .env
-
-
-Gemini API Setup
-
-Get API key from Google AI Studio
-Add to frontend .env file
+VITE_GEMINI_API_KEY=your_gemini_api_key
