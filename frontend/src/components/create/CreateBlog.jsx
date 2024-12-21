@@ -40,7 +40,7 @@ export default function CreateBlog() {
     };
 
     try {
-      const response = await axios.post("https://blog-app-be-omega.vercel.app", blogData);
+      const response = await axios.post("https://blog-app-be-omega.vercel.app/api/blogs", blogData);
 
       if (response.status === 201) {
         dispatch({ type: actionTypes.SET_IS_CREATED, payload: true });

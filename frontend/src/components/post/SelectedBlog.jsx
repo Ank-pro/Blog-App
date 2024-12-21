@@ -15,7 +15,7 @@ export default function SelectedBlog() {
       dispatch({ type: actionTypes.SET_LOADING, payload: true });
 
       try {
-        const response = await axios.get(`https://blog-app-be-omega.vercel.app/${id}`);
+        const response = await axios.get(`https://blog-app-be-omega.vercel.app/api/blogs/${id}`);
         dispatch({ type: actionTypes.SET_BLOG, payload: response.data });
       } catch (err) {
         dispatch({ type: actionTypes.SET_ERROR, payload: "Failed to fetch the blog." });
@@ -33,7 +33,7 @@ export default function SelectedBlog() {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`https://blog-app-be-omega.vercel.app/${id}`);
+      await axios.delete(`https://blog-app-be-omega.vercel.app/api/blogs/${id}`);
       dispatch({ type: actionTypes.SET_IS_DELETED, payload: true });
       setTimeout(() => {
         navigate("/");

@@ -7,7 +7,7 @@ export default function Home() {
 
   useEffect(() => {
     axios
-      .get("https://blog-app-be-omega.vercel.app")
+      .get("https://blog-app-be-omega.vercel.app/api/blogs")
       .then((response) => {
         setBlogs(response.data);
       })

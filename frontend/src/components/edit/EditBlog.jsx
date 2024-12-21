@@ -15,7 +15,7 @@ export default function EditBlog() {
     const fetchBlog = async () => {
       try {
         const response = await axios.get(
-          `https://blog-app-be-omega.vercel.app/${id}`
+          `https://blog-app-be-omega.vercel.app/api/blogs/${id}`
         );
         setBlog(response.data);
       } catch (err) {
@@ -52,7 +52,7 @@ export default function EditBlog() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(`https://blog-app-be-omega.vercel.app/${id}`, blog);
+      await axios.put(`https://blog-app-be-omega.vercel.app/api/blogs/${id}`, blog);
       setIsUpdated(true);
       setTimeout(() => {
         setIsUpdated(false);
