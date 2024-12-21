@@ -4,13 +4,16 @@
 
 nav {
   display: flex;
-  padding: 20px;
+  padding: 20px 10rem;
   gap: 1rem;
   list-style: none;
 }
+nav li{
+  cursor: pointer;
+}
 
 article {
-  margin: 0px 20px;
+  margin: 0px 10rem;
   border: 1px solid black;
   width: 350px;
   height: 350px;
