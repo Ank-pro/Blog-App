@@ -3,7 +3,7 @@ import axios from "axios";
 import run from "../../gen-ai/genAI";
 import "./create.css";
 import { useNavigate } from "react-router-dom";
-import {reducer, initialState, actionTypes} from "./createReducerFn"
+import {reducer, initialState, actionTypes} from "./createReducerFn.js"
 
 export default function CreateBlog() {
   const navigate = useNavigate();

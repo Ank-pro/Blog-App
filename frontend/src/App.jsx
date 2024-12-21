@@ -4,10 +4,10 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import  Home  from "./components/home/Home";
 import { BrowserRouter, Router, Route, Routes } from "react-router-dom";
-import CreateBlog  from "./components/create/createBlog";
-import SelectedBlog from "./components/post/SelectedBlog"
-import  EditBlog  from "./components/edit/EditBlog";
-import  NavBar  from "./components/nav-bar/NavBar";
+import SelectedBlog from "./components/post/SelectedBlog.jsx"
+import  EditBlog  from "./components/edit/EditBlog.jsx";
+import  NavBar  from "./components/nav-bar/NavBar.jsx";
+import CreateBlog from "./components/create/CreateBlog.jsx";
 
 function App() {
   return (
