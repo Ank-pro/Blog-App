@@ -7,7 +7,10 @@ const blogRoutes = require('./route/blogRoutes')
 dotenv.config();
 const app = express();
 
-app.use(cors());
+app.use(cors({
+    origin : 'https://blog-app-ochre.vercel.app/',
+    credentials : true
+}));
 app.use(express.json());
 
 mongoose
