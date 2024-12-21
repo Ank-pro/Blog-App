@@ -2,10 +2,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const cors = require('cors');
-const run = require('./gen-ai/genAi');
 const blogRoutes = require('./route/blogRoutes')
 
-const title = 'Sports'
 dotenv.config();
 const app = express();
 

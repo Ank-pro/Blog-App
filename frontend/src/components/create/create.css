@@ -1,3 +1,100 @@
-.blog-form{
-    padding: 0px 10rem;
-}
+
+.blog-form-container {
+    padding: 2rem;
+    max-width: 700px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog-form-container h2 {
+    text-align: center;
+    color: #333;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .blog-form-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .blog-form-container div {
+    margin-bottom: 20px;
+  }
+  
+  .blog-form-container label {
+    font-weight: 600;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .blog-form-container input,
+  .blog-form-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    color: #444;
+  }
+  
+  .blog-form-container input:focus,
+  .blog-form-container textarea:focus {
+    outline: none;
+    border-color: #a1a4a5; 
+  }
+  
+  .blog-form-container textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+
+  .create-actions{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .gen-btn,
+  .submit-btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .gen-btn {
+    background-color: #303131;
+    color: #fff;
+  }
+  
+  .gen-btn:hover {
+    background-color: #4b8fa6;
+  }
+  
+  .submit-btn {
+    background-color: #303131;
+    color: #fff;
+  }
+  
+  .submit-btn:hover {
+    background-color: #62c15e;
+  }
+  
+  button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+  button:disabled:hover {
+    background-color: #ddd;
+  }
+  
+
+  

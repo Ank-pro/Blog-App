@@ -18,6 +18,7 @@ route.get('/:id',async(req,res)=>{
         if(!blog){
             res.status(404).json({message : 'Blog not found!'})
         }
+        res.status(200).json(blog)
     } catch (error) {
         res.status(500).json({ message: "Error fetching blog" });
     }

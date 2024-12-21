@@ -2,3 +2,42 @@
     font-family: "Poppins", serif;
 
 }
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+  }
+
+.popup {
+    position: fixed;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 30px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-in-out;
+    border: 1px solid #ccc;
+  }
+  
+  .popup p {
+    margin: 0;
+    font-size: 16px;
+    color: #333333;
+    font-weight: 500;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(-50%) translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+  }

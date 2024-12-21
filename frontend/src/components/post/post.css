@@ -1,0 +1,55 @@
+.selected-blog {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .selected-blog h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .selected-blog .author {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .selected-blog .summary {
+    font-size: 1.1rem;
+    color: #777;
+    margin-bottom: 2rem;
+  }
+  
+  .selected-blog .content {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .selected-blog .loading, .selected-blog .error {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #f44336;
+  }
+
+  .actions{
+    display: flex;
+    gap: 1rem;
+    
+  }
+  .edit-button,.delete-button{
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 0.5px solid rgb(168, 165, 165);
+  }
+
+  .edit-button:hover,.delete-button:hover{
+    background-color: #c4c2c2;
+  }
+  
+  
+  

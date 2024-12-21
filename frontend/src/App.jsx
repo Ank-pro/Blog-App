@@ -7,14 +7,12 @@ import { BrowserRouter, Router, Route, Routes } from "react-router-dom";
 import { CreateBlog } from "./components/create/createBlog";
 import {SelectedBlog} from "./components/post/SelectedBlog"
 import { EditBlog } from "./components/edit/EditBlog";
+import { NavBar } from "./components/nav-bar/NavBar";
 
 function App() {
   return (
     <BrowserRouter>
-      <nav>
-        <li>Home</li>
-        <li>New Blog</li>
-      </nav>
+      <NavBar/>
       <Routes>
         <Route path="/" element ={<Home/>}/>
         <Route path="/create" element = {<CreateBlog/>}/>

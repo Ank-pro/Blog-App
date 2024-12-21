@@ -1,27 +1,39 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import axios from "axios";
 import "./home.css";
 
 export function Home() {
-    
+  const [blogs, setBlogs] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:5000/api/blogs")
+      .then((response) => {
+        setBlogs(response.data);
+      })
+      .catch((error) => {
+        console.error("There was an error fetching the blogs!", error);
+      });
+  }, []);
+
   return (
     <div className="home">
-      <article>
-        <header>
-          <h1>Blog Post Title</h1>
-          <p>Author</p>
-        </header>
-        <section>
-          <p id="summary">
-            Working from home has become a norm, but staying productive can be
-            challenging. This blog explores strategies like creating a dedicated
-            workspace, setting clear boundaries, and using productivity tools to
-            stay focused. Learn how to manage distractions, maintain a work-life
-            balance, and set achievable daily goals. Whether you're a freelancer
-            or remote worker, these tips will help you maximize efficiency and
-            avoid burnout while working from the comfort of your home.
-          </p>
-        </section>
-      </article>
+      <div className="blog-grid">
+        {blogs.map((blog) => (
+          <article key={blog._id}>
+            <header>
+              <h1>{blog.title}</h1>
+              <p>By {blog.author}</p>
+            </header>
+            <section>
+              <p id="summary">{blog.summary}</p>
+            </section>
+            <footer>
+              <a href={`/post/${blog._id}`}>Read More</a>
+            </footer>
+          </article>
+        ))}
+      </div>
     </div>
   );
 }

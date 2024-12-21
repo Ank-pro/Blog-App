@@ -1,0 +1,77 @@
+
+.edit-blog {
+  padding: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-container {
+  padding: 1.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  font-size: 1rem;
+  color: #555;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.edit-actions{
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  background-color: #8e918e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:disabled {
+  background-color: #cccccc;
+}
+
+button:hover {
+  background-color: #a8aba8;
+}
+
