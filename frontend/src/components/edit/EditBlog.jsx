@@ -4,7 +4,7 @@ import run from "../../gen-ai/genAI";
 import "./edit.css";
 import { useParams, useNavigate } from "react-router-dom";
 
-export function EditBlog() {
+export default function EditBlog() {
   const { id } = useParams();
   const navigate = useNavigate();
   const [blog, setBlog] = useState({ title: "", author: "", summary: "" });

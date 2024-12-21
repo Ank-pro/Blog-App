@@ -5,7 +5,7 @@ import "./create.css";
 import { useNavigate } from "react-router-dom";
 import {reducer, initialState, actionTypes} from "./createReducerFn"
 
-export function CreateBlog() {
+export default function CreateBlog() {
   const navigate = useNavigate();
   const [state, dispatch] = useReducer(reducer, initialState);
 

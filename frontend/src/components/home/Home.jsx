@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import "./home.css";
 
-export function Home() {
+export default function Home() {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {

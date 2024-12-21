@@ -4,7 +4,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { selectedBlogReducer, initialState, actionTypes } from "./selectedBlogReducer";
 import "./post.css";
 
-export function SelectedBlog() {
+export default function SelectedBlog() {
   const { id } = useParams();
   const navigate = useNavigate();
   const [state, dispatch] = useReducer(selectedBlogReducer, initialState);

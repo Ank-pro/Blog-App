@@ -2,12 +2,12 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import { Home } from "./components/home/Home";
+import  Home  from "./components/home/Home";
 import { BrowserRouter, Router, Route, Routes } from "react-router-dom";
-import { CreateBlog } from "./components/create/createBlog";
-import {SelectedBlog} from "./components/post/SelectedBlog"
-import { EditBlog } from "./components/edit/EditBlog";
-import { NavBar } from "./components/nav-bar/NavBar";
+import CreateBlog  from "./components/create/createBlog";
+import SelectedBlog from "./components/post/SelectedBlog"
+import  EditBlog  from "./components/edit/EditBlog";
+import  NavBar  from "./components/nav-bar/NavBar";
 
 function App() {
   return (
