@@ -13,6 +13,7 @@ VITE_GEMINI_API_KEY=your_gemini_api_key
 Start the frontend server by running:
 
 pnpm run dev
+
 The frontend will be running on http://localhost:5173.
 
 3. Backend Setup
