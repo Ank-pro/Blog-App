@@ -1,13 +1,9 @@
 **Setup & Installation**
 1. Clone Repository
-Fork this repository.
 Clone it to your local machine using the following command:
-git clone https://github.com/your-username/blog-app.git
+git clone https://github.com/Ank-pro/Blog-App.git
 
 2. Frontend Setup
-Navigate to the frontend directory.
-Install dependencies by running:
-
 pnpm install
 
 Create a .env file in the frontend directory and add your Google Gemini API key:
