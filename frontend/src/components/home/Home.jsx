@@ -29,7 +29,7 @@ export default function Home() {
               <p id="summary">{blog.summary}</p>
             </section>
             <footer>
-              <a href={`/post/${blog._id}`}>Read More</a>
+              <Link to={`/post/${blog._id}`}>Read More</Link>
             </footer>
           </article>
         ))}
